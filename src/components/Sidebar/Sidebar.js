@@ -11,6 +11,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 
+
 function Sidebar() {
   return (
     <div className='sidebar'>
@@ -24,6 +25,7 @@ function Sidebar() {
       <SidebarRow Icon={ExpandMoreIcon} title="MarketPlace"/>
       <hr />
       <SidebarRow Icon={LogoutIcon} title="LogOut"/>
+    
     </div>
   )
 }
