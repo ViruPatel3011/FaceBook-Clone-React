@@ -1,5 +1,6 @@
 import { Avatar } from '@mui/material'
 import React from 'react'
+import './SidebarRow.css';
 
 function SidebarRow({src,Icon,title}) {
   return (
