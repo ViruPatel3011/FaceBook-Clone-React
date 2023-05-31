@@ -1,0 +1,71 @@
+.userPage{
+    flex: 1;
+}
+.userPage>h1{
+    margin: 5px 10px;
+}
+.filter_button{
+    display: flex;
+    margin:10px;
+}
+.headerTag{
+    margin: 15px;
+    font-size: 22px;
+}
+.filter_button>button{
+    margin: 0 10px;
+    background: lightgray;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 12px;
+    font-weight: 700;
+}
+.userInfo{
+    display: flex;
+    margin: 5px 10px;
+
+}
+.left_partImage>img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+.friendsButtons>button{
+    margin: 5px 10px;
+}
+.friendsButtons>.Add{
+    width: 127px;
+    background-color:#2181f4 ;
+    color: #eff2f5;
+    font-weight: bold;
+    border-radius: 10px;
+  
+}
+.friendsButtons>.Add:hover{
+ 
+    background-color:#2181f4 ;
+    color: #eff2f5;
+   
+}
+.friendsButtons>.Remove{
+    width: 127px;
+    background-color:rgb(206, 206, 206)   ;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+.friendsButtons>.Remove:hover{
+    width: 127px;
+    background-color:lightgray   ;
+    color: black;
+    font-weight: bold;
+}
+.rightPartInfo{
+    padding: 10px 10px;
+    margin-left: 8px;
+    
+}
+.rightPartInfo>h4{
+    margin: 5px 10px;
+}

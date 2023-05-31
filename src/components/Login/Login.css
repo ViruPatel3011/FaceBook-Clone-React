@@ -1,0 +1,32 @@
+.Login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.login_logo>.logo_image{
+    object-fit: contain;
+    height: 150px;
+}
+.Login>div{
+    display: flex;
+    flex-direction: column;
+}
+.login_logo>.faceBooktext{
+    margin: 4px auto;
+    height: 150px;
+    width: 200px;
+}
+.Login>button{
+    width: 300px;
+    background-color:#2181f4 ;
+    color: #eff2f5;
+    font-weight: 600;
+}
+.Login>button:hover{
+   
+    background-color:#2181f4 ;
+    color: #eff2f5;
+ 
+}
+ 
