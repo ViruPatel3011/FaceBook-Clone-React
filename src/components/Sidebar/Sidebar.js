@@ -15,7 +15,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 function Sidebar() {
   return (
     <div className='sidebar'>
-      <SidebarRow src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" title="Viral Patel"/>
+      <SidebarRow src="https://cdn.pixabay.com/photo/2023/04/04/10/21/fashion-7898973__340.jpg" title="Viral Patel"/>
       <SidebarRow Icon={LocalHospitalIcon} title="Covid-19 Information Center"/>
       <SidebarRow Icon={EmojiFlagsIcon} title="Pages"/>
       <SidebarRow Icon={PeopleIcon} title="Friends"/>

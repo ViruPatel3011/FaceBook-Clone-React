@@ -2,11 +2,11 @@ import React from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import HomeIcon from "@mui/icons-material/Home";
-// import FlagIcon from "@mui/icons-material/Flag";
-// import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
-// import StorefrontIcon from "@mui/icons-material/Storefront";
+import FlagIcon from "@mui/icons-material/Flag";
+import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
+import StorefrontIcon from "@mui/icons-material/Storefront";
 import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Avatar, IconButton } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import ForumIcon from "@mui/icons-material/Forum";
@@ -14,7 +14,7 @@ import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // import Layout from "../Pages/Layout";
 
-function Header() {
+function Header({ activeIcon, handleIconClick }) {
   return (
     <div className="Header">
       <div className="header_left">
@@ -28,37 +28,18 @@ function Header() {
           <input type="text" placeholder="Search Facebook" />
         </div>
       </div>
-      {/* <div className="header_middle">
-        <div className="header_option">
-          <NavLink to="/" exact activeClassName="header_option--active">
-            <HomeIcon fontSize="large" />
-          </NavLink>
-        </div>
-        <div className="header_option">
-          <NavLink to="/flag" activeClassName="header_option--active">
-            <FlagIcon fontSize="large" />
-          </NavLink>
-        </div>
-        <div className="header_option">
-          <NavLink to="/subscriptions" activeClassName="header_option--active">
-            <SubscriptionsIcon fontSize="large" />
-          </NavLink>
-        </div>
-        <div className="header_option">
-          <NavLink to="/storefront" activeClassName="header_option--active">
-            <StorefrontIcon fontSize="large" />
-          </NavLink>
-        </div>
-        <div className="header_option">
-          <NavLink to="/friendsList" activeClassName="header_option--active">
-            <SupervisedUserCircleIcon fontSize="large" />
-          </NavLink>
-        </div>
-      </div> */}
-      {/* <div className="header_middle">
-        <div className="header_option header_option--active">
+
+      <div className="header_middle">
+        <Link
+          to="/"
+          className={`header_option ${
+            activeIcon === "home" ? "header_option--active" : ""
+          }`}
+          onClick={() => handleIconClick("home")}
+        >
           <HomeIcon fontSize="large" />
-        </div>
+        </Link>
+
         <div className="header_option">
           <FlagIcon fontSize="large" />
         </div>
@@ -68,19 +49,15 @@ function Header() {
         <div className="header_option">
           <StorefrontIcon fontSize="large" />
         </div>
-        <div className="header_option">
-          <SupervisedUserCircleIcon fontSize="large" />
-        </div>
-      </div> */}
-
-      <div className="header_middle">
-        <Link to="/" className="header_option header_option--active">
-          <HomeIcon fontSize="large" />
-        </Link>
-        <Link to="/user" className="header_option">
+        <Link
+          to="/user"
+          className={`header_option ${
+            activeIcon === "user" ? "header_option--active" : ""
+          }`}
+          onClick={() => handleIconClick("user")}
+        >
           <SupervisedUserCircleIcon fontSize="large" />
         </Link>
-        {/* Add other header options here */}
       </div>
 
       <div className="header_right">

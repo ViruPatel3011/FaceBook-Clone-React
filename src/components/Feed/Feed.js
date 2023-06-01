@@ -3,20 +3,12 @@ import "./Feed.css";
 import StoryReel from "./StoryReel";
 import MessageSender from "./MessageSender";
 import Post from "./Post";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Person from "../Pages/Person/Person";
-// import Home from "../Pages/Home/Home";
-// import Header from "../Header/Header";
+
 
 function Feed() {
   return (
     <div className="Feed">
-      {/* <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/friendsList" element={<Person />} />
-        </Routes>
-      </Router> */}
+    
       <StoryReel />
       <MessageSender />
       <Post
