@@ -97,9 +97,9 @@ function MessageSender() {
             />
           </div>
 
-          <div  className="AddPost">
-            <div  className="AddPhotoIcon">
-              <AddToPhotosIcon  className="AddPicIcon"/>
+          <div className="AddPost">
+            <div className="AddPhotoIcon">
+              <AddToPhotosIcon className="AddPicIcon" />
               <p>Add photos/videos </p>
               <span>or drag and drop</span>
             </div>
