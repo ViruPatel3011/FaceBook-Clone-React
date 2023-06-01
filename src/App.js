@@ -3,8 +3,8 @@ import "./App.css";
 import Header from "./components/Header/Header";
 // import Login from "./components/Login/Login";
 import Sidebar from "./components/Sidebar/Sidebar";
-import UserPage from "./components/UserPage/UserPage";
-// import Feed from "./components/Feed/Feed";
+// import UserPage from "./components/UserPage/UserPage";
+import Feed from "./components/Feed/Feed";
 
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
           <Header />
           <div className="app_body">
             <Sidebar />
-            <UserPage/>
-            {/* <Feed /> */}
+            {/* <UserPage/> */}
+            <Feed />
         
           </div>
         {/* </>
