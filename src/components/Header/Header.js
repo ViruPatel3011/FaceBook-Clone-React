@@ -2,11 +2,11 @@ import React from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import HomeIcon from "@mui/icons-material/Home";
-import FlagIcon from "@mui/icons-material/Flag";
-import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
-import StorefrontIcon from "@mui/icons-material/Storefront";
+// import FlagIcon from "@mui/icons-material/Flag";
+// import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
+// import StorefrontIcon from "@mui/icons-material/Storefront";
 import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
-// import { Link, NavLink } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { Avatar, IconButton } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import ForumIcon from "@mui/icons-material/Forum";
@@ -55,7 +55,7 @@ function Header() {
           </NavLink>
         </div>
       </div> */}
-      <div className="header_middle">
+      {/* <div className="header_middle">
         <div className="header_option header_option--active">
           <HomeIcon fontSize="large" />
         </div>
@@ -71,7 +71,18 @@ function Header() {
         <div className="header_option">
           <SupervisedUserCircleIcon fontSize="large" />
         </div>
+      </div> */}
+
+      <div className="header_middle">
+        <Link to="/" className="header_option header_option--active">
+          <HomeIcon fontSize="large" />
+        </Link>
+        <Link to="/user" className="header_option">
+          <SupervisedUserCircleIcon fontSize="large" />
+        </Link>
+        {/* Add other header options here */}
       </div>
+
       <div className="header_right">
         <div className="header_info">
           <Avatar />
